@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://tljwmy8egh4f"]
+
+[ext_resource type="PackedScene" uid="uid://6tclf55q20rj" path="res://props/road_barier_2a.glb" id="1_qfl2k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_voycf"]
+size = Vector3(3.2519531, 2.2802734, 0.89331055)
+
+[node name="Barrier" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025390625, 0.6401367, 0.0059814453)
+shape = SubResource("BoxShape3D_voycf")
+
+[node name="road_barier_2a2" parent="." instance=ExtResource("1_qfl2k")]

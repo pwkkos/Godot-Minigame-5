@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0bia5j72bwke"]
+
+[ext_resource type="PackedScene" uid="uid://biedk8xwivrve" path="res://props/traffic_barell_1.glb" id="1_q36op"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ptqd7"]
+size = Vector3(1.477356, 2.245636, 1.7009792)
+
+[node name="Barrel" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1113621, 1.1390228, -0.031985283)
+shape = SubResource("BoxShape3D_ptqd7")
+
+[node name="traffic_barell_12" parent="." instance=ExtResource("1_q36op")]
